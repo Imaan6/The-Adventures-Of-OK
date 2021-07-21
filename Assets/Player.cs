@@ -21,11 +21,12 @@ public class Player : MonoBehaviour
         // Reset MoveDelta
         moveDelta = new Vector3(x,y,0);
 
-        //Swap Sprite direction , Wethere you're going right or left
+        //Swap Sprite direction , Wether you're going right or left
         if (moveDelta.x > 0)
             transform.localScale = Vector3.one;
         else if (moveDelta.x < 0)
             transform.localScale = new Vector3(-1, 0, 0);
+
  
     }
 }
